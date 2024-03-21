@@ -1,5 +1,5 @@
-import { VStack } from "@chakra-ui/react";
 import React from "react";
+import { VStack } from "@chakra-ui/react";
 import { Link, Outlet } from "react-router-dom";
 
 export default function Contact() {

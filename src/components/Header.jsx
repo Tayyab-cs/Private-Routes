@@ -17,6 +17,15 @@ export default function Header() {
       <Link to="/contact" _active={{ color: "blue.500" }}>
         Contact
       </Link>
+      <Link to="/graphql" _active={{ color: "blue.500" }}>
+        GraphQL
+      </Link>
+      <Link to="/context" _active={{ color: "blue.500" }}>
+        Context
+      </Link>
+      <Link to="/position" _active={{ color: "blue.500" }}>
+        Position
+      </Link>
     </VStack>
   );
 }
