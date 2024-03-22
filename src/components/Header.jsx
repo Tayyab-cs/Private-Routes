@@ -26,6 +26,9 @@ export default function Header() {
       <Link to="/position" _active={{ color: "blue.500" }}>
         Position
       </Link>
+      <Link to="/graph" _active={{ color: "blue.500" }}>
+        Graph
+      </Link>
     </VStack>
   );
 }

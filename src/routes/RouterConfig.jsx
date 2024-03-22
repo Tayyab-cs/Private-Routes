@@ -11,6 +11,7 @@ import Content from "../components/navbar/Content.jsx";
 import GqlComponent from "../components/gqlComponent/index.jsx";
 import ContextComponent from "../components/contextComponent/index.jsx";
 import Position from "../components/position/index.jsx";
+import Graph from "../components/graph/index.jsx";
 
 export default function RouterConfig() {
   return (
@@ -21,6 +22,7 @@ export default function RouterConfig() {
       <Route path="/graphql" element={<GqlComponent />} />
       <Route path="/context" element={<ContextComponent />} />
       <Route path="/position" element={<Position />} />
+      <Route path="/graph" element={<Graph />} />
       <Route path="/contact" element={<Contact />}>
         <Route path="email" element={<Email />} />
         <Route path="phone-no" element={<PhoneNo />} />

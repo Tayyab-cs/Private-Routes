@@ -10,6 +10,7 @@ import {
   ApolloProvider,
   gql,
 } from "@apollo/client";
+import { SaasProvider } from "@saas-ui/react";
 
 const client = new ApolloClient({
   uri: "http://localhost:6969/graphql",
@@ -41,11 +42,13 @@ const client = new ApolloClient({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider>
-      <BrowserRouter>
-        <ApolloProvider client={client}>
-          <App />
-        </ApolloProvider>
-      </BrowserRouter>
+      <SaasProvider>
+        <BrowserRouter>
+          <ApolloProvider client={client}>
+            <App />
+          </ApolloProvider>
+        </BrowserRouter>
+      </SaasProvider>
     </ChakraProvider>
   </React.StrictMode>
 );
